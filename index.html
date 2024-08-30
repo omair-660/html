@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> كورس HTML</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="head.jpg" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #00eaff, #6e00ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            direction: rtl;
+        }
+        .ad-container {
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            max-width: 900px;
+            width: 90%;
+        }
+        .ad-container .text-content {
+            max-width: 50%;
+        }
+        li{
+            margin: 5px 0;
+        }
+        .ad-container h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .ad-container p {
+            font-size: 18px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .ad-container .cta-button {
+            background-color: #2c00d0;
+            color: #fff;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .ad-container .cta-button:hover {
+            background-color: #200290;
+            transform: translateY(4px);
+        }
+        .ad-container .image-content {
+            max-width: 40%;
+        }
+        .ad-container .image-content img {
+            width: 100%;
+            height: auto;
+        }
+      
+@media (max-width: 768px) {
+    ul{list-style: square;}
+    .ad-container {
+        flex-direction: column-reverse;
+        text-align: center; 
+    }
+    .ad-container .text-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .ad-container .image-content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .ad-container h1 {
+        font-size: 28px; 
+    }
+    .ad-container p {
+        font-size: 14px; 
+    }
+    .ad-container .cta-button {
+        font-size: 14px; 
+        padding: 12px 20px; 
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="ad-container">
+        <div class="text-content">
+            <h1>تعلم لغة HTML</h1>
+            <p>
+                هل ترغب في بدء رحلتك في تطوير الويب؟<br>
+                تعلم لغة HTML - الخطوة الأولى لبناء مواقع الويب!
+            </p>
+            <p>
+                في هذا الكورس، ستتعلم:
+                <ul>
+                    <li><strong>أساسيات HTML:</strong> كيفية كتابة هيكل الصفحة باستخدام الوسوم (Tags).</li>
+                    <li><strong>تنسيق المحتوى:</strong> كيفية تنظيم النصوص، الصور، والروابط.</li>
+                    <li><strong>الصفحات التفاعلية:</strong> إضافة نماذج (Forms) وأزرار للمستخدمين.</li>
+                    <li><strong>نصائح عملية:</strong> كيف تبدأ مشروعك الأول في تطوير الويب.</li>
+                </ul>
+            </p>
+            <p>
+                <strong>لماذا تتعلم HTML؟</strong><br>
+                <ul>
+                    <li><strong>سهل التعلم:</strong> HTML هي اللغة الأساسية لكل موقع ويب، ويمكنك إتقانها بسرعة.</li>
+                    <li><strong>مهمة لكل مطور:</strong> HTML هي الأساس لبناء مواقع وتطبيقات ويب متقدمة.</li>
+                    <li><strong>فرص وظيفية واسعة:</strong> مهارات HTML مطلوبة بشدة في سوق العمل.</li>
+                </ul>
+            </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2_PJEu0qrxPVA459c9f018xFK-Qx4madCKdVYPIK7GmYWqg/viewform?usp=sf_link" target="_blank" class="cta-button">انضم الآن</a>
+        </div>
+        <div class="image-content">
+            <img src="1.png" alt="Coding Icon">
+        </div>
+    </div>
+</body>
+</html>
